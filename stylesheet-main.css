@@ -8,7 +8,8 @@ body{
 }
 .box-center{
      background-color: lightgray; /*blueviolet; */
-    text-align: center;
+     border: thin black solid;
+    text-align: justify;
     border-radius: 5px;
     /* width: 75%; */
     /* width: fit-content; */
