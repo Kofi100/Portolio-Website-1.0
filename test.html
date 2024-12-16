@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-layout{
+            display: grid;
+            grid-template-areas:
+             "...one...two...";
+             
+        }
+        .grid-layout:nth-child(1){
+            grid-area: one;
+        }
+        .grid-layout:nth-child(2){
+            grid-area: two;
+        }
+        .grid-layout>*{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <main>
+
+        <div class="grid-layout">
+            <p>NAVIGATION</p>
+            <div style="width: 70%;">
+                <p>Main</p>
+            </div>
+        </div>
+
+    </main>
+    
+</body>
+</html>
