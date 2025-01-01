@@ -6,6 +6,24 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow-x: hidden;
 }
+.navigation{
+    display: flex;
+    /* justify-self: ; */
+    justify-content: center;
+    align-items:center;
+    *{
+        margin-left: 1rem;margin-right: 1rem;
+    }
+}
+.pfp_div{
+    display: flex;
+    justify-content: center;
+}
+.pfp{
+    width: 15rem;height: 15rem;
+    display: flex;
+
+}
 .box-center{
      background-color: lightgray; /*blueviolet; */
      border: thin black solid;
@@ -66,6 +84,15 @@ body{
         margin-bottom: 0;
     }
 
+}
+.contact{
+    img{
+        width: 3rem;
+        height: 3rem;
+    }
+    img:hover{
+        background-color: hsl(194, 86%, 31%);
+    }
 }
 /* going for a mobile first view */
 /* settings here are for  tablet and desktop/laptop screens */
