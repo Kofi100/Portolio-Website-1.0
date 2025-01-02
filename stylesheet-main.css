@@ -98,7 +98,8 @@ body{
         img{
              transition: all .3s;
         /* height: 15rem;width: 20rem; */
-        box-shadow: 0 0 .5rem .3rem hsl(47, 88%, 63%);
+        box-shadow: 0 0 .5rem .3rem hsl(194, 86%, 31%);
+        /* hsl(47, 88%, 63%) */
         }
        
     }
