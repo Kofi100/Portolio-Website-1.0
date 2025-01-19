@@ -1,0 +1,37 @@
+body{
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(57, 15, 97);
+    color:white;
+    /* text-align: center; */
+    text-align: justify;
+}
+a{
+    color:aqua;
+}
+
+
+
+.navigation{
+    display: flex;
+    /* justify-self: ; */
+    justify-content: center;
+    align-items:center;
+    *{
+        margin-left: 1rem;margin-right: 1rem;
+    }
+}
+
+
+
+.box-center{
+    /* background-color: lightgray; blueviolet; */
+    background-color: blueviolet;
+    border: thin black solid;
+   text-align: justify;
+   border-radius: 5px;
+   padding: .5rem;
+}
+.homeHeader{
+
+}

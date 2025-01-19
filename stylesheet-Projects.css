@@ -1,0 +1,76 @@
+body{
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(57, 15, 97);
+    color:white;
+    text-align: center;
+}
+a{
+    color:aqua;
+}
+
+.navigation{
+    display: flex;
+    /* justify-self: ; */
+    justify-content: center;
+    align-items:center;
+    *{
+        margin-left: 1rem;margin-right: 1rem;
+    }
+}
+.box-center{
+    /* background-color: lightgray; blueviolet; */
+    background-color: blueviolet;
+    border: thin black solid;
+   text-align: justify;
+   border-radius: 5px;
+   padding: .5rem;
+}
+.homeHeader{
+    text-align: center;
+}
+
+.projectsShowcase{
+    display: flex;
+    flex-direction: column;
+    img{
+        width: 15rem;
+        height: 10rem;
+        /* aspect-ratio:1/1; */
+    }
+    .rowDivision{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        /* div stands for every single division containign a project in .rowDivision<<.projectsShowcase */
+        div{
+            display: flex;
+            flex-direction: column;
+            margin-top: .5rem;
+            margin-bottom: .5rem;
+        }
+    }
+}
+
+@media (min-width:800px){
+.projectsShowcase{
+    flex-direction: column;
+    .rowDivision{
+
+        flex-direction: row;
+        justify-content: center;
+        div{
+            /* margin-top: 0;margin-bottom: 0; */
+            margin-left: .5rem; margin-right: .5rem;
+        img{
+            width: 20rem;
+            height: 15.42rem;
+        }
+        }
+    }
+}
+
+}
+
+
+
