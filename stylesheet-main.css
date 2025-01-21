@@ -1,9 +1,15 @@
 :root{
 
 }
+@font-face {
+    font-family: Poppins;
+    src: url(assets/fonts/Poppins/Poppins-Regular.ttf);
+    font-family: Roboto;
+    src: url(assets/fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf);
+}
 body{
     color: black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Roboto;
     overflow-x: hidden;
     /* background-image: url("assets/rb_63441\(2\).png"); */
     /* background-image: linear-gradient(to bottom right,yellow,black); */
@@ -12,8 +18,12 @@ body{
     background-size: cover;
     color:white;
 }
+
 a{
     color: aqua;
+}
+h1,h2,h3{
+    font-family: Poppins;
 }
 .navigation{
     display: flex;
