@@ -83,14 +83,17 @@ h1,h2,h3{
 }
 .skillList{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
+    align-items:center;
+    /* width: 100%; */
     padding-left: 0;
     li{
         display: flex;
         background-color: rgb(20, 62, 248);
         width: auto;
         padding: 2rem 3rem;
+        margin-bottom: 1rem;
         /* border: inset; */
         border-radius:0.5rem;
         /* margin-left: 1rem;margin-right: 1rem; */
@@ -214,6 +217,12 @@ color:black;
      }
      .pfp{
         height: 35rem;
+     }
+     .skillList{
+        flex-direction: row;
+        li{
+            margin-bottom: 0;
+        }
      }
 
 }
