@@ -13,10 +13,14 @@ body{
     overflow-x: hidden;
     /* background-image: url("assets/rb_63441\(2\).png"); */
     /* background-image: linear-gradient(to bottom right,yellow,black); */
+    
     background-color: rgb(57, 15, 97);
+    color:white;
+    
     background-repeat: no-repeat;
     background-size: cover;
-    color:white;
+
+    /* padding: 0 2rem 0 2rem; */
 }
 
 a{
@@ -47,13 +51,14 @@ h1,h2,h3{
 }
 .box-center{
      /* background-color: lightgray; blueviolet; */
-     background-color: blueviolet;
-     border: thin black solid;
+     /* background-color: blueviolet; */
+     /* border: thin black solid; */
     text-align: justify;
     border-radius: 5px;
     /* width: 75%; */
     /* width: fit-content; */
-    padding: .5rem;
+    /* padding: .5rem; */
+    padding: 0;margin: 0;
     /* color:white; */
 }
 .box-center a{
@@ -74,10 +79,16 @@ h1,h2,h3{
 
 
 }
+.skillList{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 .aboutMe{
     
 }
 .section--detailsOne--text{
+    /* margin-bottom: 32px; */
 
 }
 .scroll-list-item{
@@ -147,6 +158,9 @@ h1,h2,h3{
     /* .showcase-item-main>*{
         font-weight: bold;
     } */
+     body{
+        padding: 0 4rem 0 4rem;
+     }
      .scrolllist_main{
         flex-direction: row;
         height: auto;
@@ -167,6 +181,7 @@ h1,h2,h3{
         max-width: 32rem;
         text-align: start;
         justify-content: center;
+        
      }
      .pfp{
         height: 35rem;
