@@ -14,7 +14,9 @@ body{
     /* background-image: url("assets/rb_63441\(2\).png"); */
     /* background-image: linear-gradient(to bottom right,yellow,black); */
     
-    background-color: rgb(57, 15, 97);
+    /* background-color: rgb(57, 15, 97); */
+    background-color: rgb(28, 6, 49);
+
     color:white;
     
     background-repeat: no-repeat;
@@ -83,6 +85,16 @@ h1,h2,h3{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding-left: 0;
+    li{
+        display: flex;
+        background-color: rgb(20, 62, 248);
+        width: auto;
+        padding: 2rem 3rem;
+        /* border: inset; */
+        border-radius:0.5rem;
+        /* margin-left: 1rem;margin-right: 1rem; */
+    }
 }
 .aboutMe{
     
@@ -144,6 +156,7 @@ h1,h2,h3{
 
 }
 .contact{
+    display: none;
     img{
         width: 3rem;
         height: 3rem;
@@ -151,6 +164,22 @@ h1,h2,h3{
     img:hover{
         background-color: hsl(194, 86%, 31%);
     }
+}
+.contactBtn{
+    display: flex;
+    justify-content: center;
+    background-color:rgb(102, 48, 151);
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 2rem;
+    border-radius:.5rem;
+    font-size: large;
+    margin: 0 3rem 0 3rem;
+    /* width: 50%; */
+}
+.contactBtn:hover{
+background-color:rgb(255, 255, 255);
+color:black;
 }
 /* going for a mobile first view */
 /* settings here are for  tablet and desktop/laptop screens */
