@@ -1,3 +1,13 @@
+:root {
+    --text: #000000;
+    --background: #ffffff;
+    --primary: #ffdc00;
+    --secondary: #f6e788;
+    --accent: #3730ff;
+    --accentSecondary: #716cff;
+    /* --accent:aqua; */
+}
+
 @font-face {
     font-family: Poppins;
     src: url(assets/fonts/Poppins/Poppins-Regular.ttf);
@@ -8,94 +18,120 @@
 
 
 
-body{
+body {
 
     font-family: Roboto;
-    background-color: rgb(28, 6, 49);
-    color:white;
+    background-color: var(--background);
+    color: var(--text);
     text-align: center;
 }
-h1,h2,h3{
+
+h1,
+h2,
+h3 {
     font-family: Poppins;
     font-weight: bold;
 }
-a{
-    color:aqua;
+
+a {
+    color: var(--accent);
 }
 
-.navigation{
+.navigation {
     display: flex;
     /* justify-self: ; */
     justify-content: center;
-    align-items:center;
-    *{
-        margin-left: 1rem;margin-right: 1rem;
+    align-items: center;
+
+    * {
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 }
-.box-center{
-    /* background-color: lightgray; blueviolet; */
-    background-color: blueviolet;
-    border: thin black solid;
-   text-align: justify;
-   border-radius: 5px;
-   padding: .5rem;
+
+.box-center {
+    text-align: justify;
+    border-radius: 5px;
+    padding: 0;
+    margin: 0;
 }
-.homeHeader{
+
+.Header {
     text-align: center;
 }
 
-.projectsShowcase{
+.projectsShowcase {
     display: flex;
     flex-direction: column;
-    img{
-        width: 15rem;
-        height: 10rem;
-        border-radius:.75rem;
-        /* aspect-ratio:1/1; */
-    }
-    a:hover{
-        img{
-             transition: all .3s;
-        /* height: 15rem;width: 20rem; */
-        /* box-shadow: 0 0 1rem .3rem hsl(194, 86%, 31%); */
-        box-shadow: 0 0 1rem .3rem hsl(0, 0%, 100%);
-        /* height: 15rem;width: 20rem; */
-        /* hsl(47, 88%, 63%) yellow-ish,like the blog webpage, might use  */
-        }
-    }
-    .rowDivision{
+
+    .rowDivision {
         display: flex;
         flex-direction: column;
-        align-items:center;
+        align-items: center;
+
         /* div stands for every single division containign a project in .rowDivision<<.projectsShowcase */
-        div{
+        div {
             display: flex;
             flex-direction: column;
             margin-top: .5rem;
             margin-bottom: .5rem;
+
+            a {
+                margin-bottom: 0;
+                color: var(--text);
+                font-weight: bold;
+                text-decoration: none;
+                font-size: larger;
+                text-align: center;
+                word-wrap: break-word;
+            }
         }
     }
+
+    img {
+        width: 15rem;
+        height: 10rem;
+        border-radius: .75rem;
+        /* aspect-ratio:1/1; */
+    }
+
+    a:hover {
+        img {
+            transition: all .3s;
+            /* height: 15rem;width: 20rem; */
+            /* box-shadow: 0 0 1rem .3rem hsl(194, 86%, 31%); */
+            box-shadow: 0 0 1rem .3rem var(--accent);
+            /* height: 15rem;width: 20rem; */
+            /* hsl(47, 88%, 63%) yellow-ish,like the blog webpage, might use  */
+        }
+
+        color:var(--accent);
+    }
+
+
 }
 
-@media (min-width:800px){
-.projectsShowcase{
-    flex-direction: column;
-    .rowDivision{
+@media (min-width:800px) {
+    .projectsShowcase {
+        flex-direction: column;
 
-        flex-direction: row;
-        justify-content: center;
-        div{
-            /* margin-top: 0;margin-bottom: 0; */
-            margin-left: .5rem; margin-right: .5rem;
-        img{
-            width: 20rem;
-            height: 15.42rem;
-        }
+        .rowDivision {
+
+            flex-direction: row;
+            justify-content: center;
+
+            div {
+                /* margin-top: 0;margin-bottom: 0; */
+                margin-left: .5rem;
+                margin-right: .5rem;
+                width: 32rem;
+
+                img {
+                    width: 20rem;
+                    height: 15.42rem;
+                }
+            }
         }
     }
-}
 
 }
-
-
-

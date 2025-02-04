@@ -1,3 +1,12 @@
+:root {
+    --text: #000000;
+    --background: #ffffff;
+    --primary: #ffdc00;
+    --secondary: #f6e788;
+    --accent: #3730ff;
+    --accentSecondary: #716cff;
+    /* --accent:aqua; */
+}
 
 @font-face {
     font-family: Poppins;
@@ -6,47 +15,54 @@
     src: url(assets/fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf);
 }
 
-
-body{
+body {
 
     font-family: Roboto;
-    background-color: rgb(28, 6, 49);
-    color:white;
+    background-color: var(--background);
+    color: var(--text);
     /* text-align: center; */
     text-align: justify;
     padding: 0 2rem 0 2rem;
 }
 
-h1,h2,h3{
+h1,
+h2,
+h3 {
     font-family: Poppins;
     font-weight: bold;
 }
-a{
-    color:aqua;
+
+a {
+    color: var(--accent);
+}
+
+strong {
+    color: var(--accent);
 }
 
 
-
-.navigation{
+.navigation {
     display: flex;
     /* justify-self: ; */
     justify-content: center;
-    align-items:center;
-    *{
-        margin-left: 1rem;margin-right: 1rem;
+    align-items: center;
+
+    * {
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 }
 
 
 
-.box-center{
+.box-center {
     /* background-color: lightgray; blueviolet; */
-    background-color: blueviolet;
-    border: thin black solid;
-   text-align: justify;
-   border-radius: 5px;
-   padding: .5rem;
+    text-align: justify;
+    border-radius: 5px;
+    padding: 0;
+    margin: 0;
 }
-.homeHeader{
 
+.Header {
+    text-align: center;
 }
