@@ -29,6 +29,7 @@ body {
     color: var(--text);
     background-repeat: no-repeat;
     background-size: cover;
+    font-size: 16px;
 }
 
 a {
@@ -73,6 +74,7 @@ h3 {
 .pfp_div {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .pfp {
@@ -95,13 +97,14 @@ h3 {
 
 .skillList {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     /* width: 100%; */
     padding-left: 0;
     gap: 16px;
     flex-wrap: wrap;
+    /* margin-bottom: 0; */
 
     li {
         display: flex;
@@ -109,7 +112,8 @@ h3 {
         /*rgb(20, 62, 248);*/
         color: black;
         width: auto;
-        padding: 2rem 3rem;
+        padding: 1.5rem;
+        /* padding: 2rem 3rem; */
         margin-bottom: 1rem;
         margin-left: 1rem;
         margin-right: 1rem;
@@ -119,21 +123,50 @@ h3 {
     }
 
     img {
-        width: 80px;
+        width: 32px;
         aspect-ratio: 1;
     }
+}
+.section--Home--HireButton{
+        display: flex;
+        justify-content: center;
+    /* justify-content: flex-end;
+    margin-right: 30vw; */
+    background-color: white;
+    color:var(--accent);
+    border: 1px solid black;
+    padding: 1rem;
+    /* max-width: 550px; */
+    border-radius: .5rem;
+    text-decoration: none;
+    font-size: larger;
+    /* width: max-content; */
+    
+}
+.section--Home--HireButton:hover{
+    background-color:var(--primary);
+    color:var(--accentSecondary);
+    transition: all .3s ease;
 }
 
 
 
 .aboutMe {}
-
+/* section[name="home"]{ */
+.section--Home{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    justify-content: space-evenly;
+    height: auto;
+}
 
 section[name="projects"] {
     /* border-top: solid thin var(--text);
     border-bottom: solid thin var(--text); */
     background-color: var(--secondary);
     border-radius: .5rem;
+    margin-top: 2rem;
     padding: 1rem 2rem;
 }
 
@@ -246,6 +279,7 @@ section[name="projects"] {
 
 /* going for a mobile first view */
 /* settings here are for  tablet and desktop/laptop screens */
+/* @media (min-width:800px) { */
 @media (min-width:800px) {
 
     /* .showcase-item-main>*{
@@ -277,7 +311,7 @@ section[name="projects"] {
         flex-direction: column;
         max-width: 32rem;
         text-align: start;
-        justify-content: center;
+        justify-content: space-between;
 
     }
 
@@ -291,8 +325,15 @@ section[name="projects"] {
         li {
             margin-bottom: 0;
         }
+        img{
+            width: 80px;
+        }
     }
 
+    .section--Home{
+        
+         /* height: 80vh; */
+    }
 }
 
 /* @media (max-width:800px) {
