@@ -21,15 +21,17 @@
 </head>
 
 <body>
-    <header class="navigation">
-        <a href="#">Home</a>
-        <a href="aboutMe.html">About</a>
-        <a href="projects.html">Projects</a>
+    <header class="navigation" id="navigation">
+        <a href="#" class="smoothScroll">Home</a>
+        <a href="#aboutMe" class="smoothScroll">About</a>
+        <a href="#projects">Projects</a>
         <a href="">Contact</a>
     </header>
-    <hr style="border-color: white;">
-    <!-- <h1 class="box-center homeHeader">Home</h1> -->
-    <hr style="border-color: white;">
+  
+
+    <main>
+     <!-- <hr style="border-color: white;">
+    <hr style="border-color: white;"> -->
 
     <section name="home" class="section--Home">
     <section class="section--detailsOne">
@@ -58,22 +60,57 @@
     </section>
 
     <br>
-    <section name="projects">
+    <section class="aboutMe" id="aboutMe">
+        <h2>ABOUT ME</h2>
+        <p>I am a tech enthusiast with a strong passion for <strong>programming</strong> and <strong>creating intuitive
+            user interfaces</strong>.</p>
+        <p>My goal is to design software and applications that <strong>simplify</strong> tasks for users, ensuring
+        <strong>a seamless and headache-free experience</strong>.</p>
+        <p>
+        I enjoy developing apps that are not only functional but also <strong>add value to people's lives,
+            including my own</strong> .</p>
+        <p>
+        <strong>Problem-solving</strong> is at the core of what I do, and I find <strong>inspiration</strong>
+        even in the challenges I encounter, like debugging code or optimizing user experiences.</p>
+        <!-- <p>
+        When I’m not coding or helping with chores, I spend my time exploring tech trends, gaming, or watching
+        YouTube videos on tech tips, news, and gaming—especially about my favorite franchises like Megaman X, Sonic, or
+        Terraria.</p>
+        <p>
+        Gaming also helps me unwind and sometimes sparks ideas for solving coding challenges. -->
+        <p>
+        I also enjoy gaming sometimes and reading books , expanding my knowledge, and thinking of new ways to innovate and grow as a
+        developer.</p>
+    </section>
+    <section name="projects" id="projects">
         <h2>My Projects</h2>
         These are some of the works I have done so far.
+        <p>More of these projects can be seen <a href="projects.html">here</a></p>
         <section class="scrolllist_main">
-            <div class="scrolllist_item"><a href="https://kofi100.github.io/RecipePageHTML-Chall/"><img
+            <div class="scrolllist_item">
+                <a href="https://kofi100.github.io/RecipePageHTML-Chall/"><img
                         src="assets/screenshot_RecipePage_Desktop2.png" alt="Thumbnail of Recipe Page"></a><a
-                    href="https://kofi100.github.io/RecipePageHTML-Chall/">A Recipe Page</a></div>
+                    href="https://kofi100.github.io/RecipePageHTML-Chall/">
+                    A Recipe Page 
+                    <p>Done using HTML,CSS</p></a></div>
             <div class="scrolllist_item"><a href="https://kofi100.github.io/Blog-Card-Challenge-HTML/"><img
                         src="assets/screenshot_active_Blog.png" alt="Thumbnail of Blog Page"></a><a
-                    href="https://kofi100.github.io/Blog-Card-Challenge-HTML/">Blog Webpage</a></div>
+                    href="https://kofi100.github.io/Blog-Card-Challenge-HTML/">
+                    Blog Webpage
+                <p>Done using HTML,CSS</p>
+            </a></div>
             <div class="scrolllist_item"><a href="https://kofi100.github.io/FAQ-Accordion-HTMLChall/"><img
                         src="assets/screenshot_desktop_FAQ Acordion.png" alt="Thumbnail of FAQ Accordion"></a><a
-                    href="https://kofi100.github.io/FAQ-Accordion-HTMLChall/">FAQ Accordion Concept</a></div>
+                    href="https://kofi100.github.io/FAQ-Accordion-HTMLChall/">
+                    FAQ Accordion Concept
+                    <p>Done using HTML,CSS</p>
+                </a></div>
             <div class="scrolllist_item"><a href="https://kofi100.github.io/SocialProof-HTMLProject02Dec2024/"><img
                         src="assets/desktopScreenshot_SocialProof2.png" alt="Thumbnail of Social Proof Site"></a><a
-                    href="https://kofi100.github.io/SocialProof-HTMLProject02Dec2024/">Social Proof Webpage Concept</a>
+                    href="https://kofi100.github.io/SocialProof-HTMLProject02Dec2024/">
+                    Social Proof Webpage Concept
+                    <p>Done using HTML,CSS</p>
+                </a>
             </div>
 
         </section>
@@ -105,7 +142,8 @@
             brgfx on Freepik</a>*
     </div>
     <a href="" class="contactBtn">CONTACT ME</a>
+    </main>
 
 </body>
-
+<script src="script.js"></script>
 </html>

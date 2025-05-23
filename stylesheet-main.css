@@ -46,10 +46,14 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color:var(--secondary);
+    padding-top: 16px;
+    padding-bottom: 16px;
 
     * {
         margin-left: 1rem;
         margin-right: 1rem;
+        
     }
 }
 
@@ -151,7 +155,13 @@ h3 {
 
 
 
-.aboutMe {}
+.aboutMe {
+             padding-top: 5rem;
+    padding-bottom: 5rem;
+    p{
+        letter-spacing: .1rem;
+    }
+}
 /* section[name="home"]{ */
 .section--Home{
     display: flex;
@@ -159,6 +169,9 @@ h3 {
     /* justify-content: center; */
     justify-content: space-evenly;
     height: auto;
+    /* margin-top: 2rem; */
+    margin-top: 5rem;
+    
 }
 
 section[name="projects"] {
@@ -172,6 +185,7 @@ section[name="projects"] {
 
 .scroll-list-item {
     max-height: 50px;
+
 }
 
 .showcase-item-main {
@@ -239,6 +253,12 @@ section[name="projects"] {
         text-decoration: none;
         font-size: larger;
         text-align: center;
+        p{
+            font-weight: normal;
+            margin: 0;
+            font-size:medium;
+        }
+
     }
 
 }
@@ -276,6 +296,22 @@ section[name="projects"] {
     background-color: var(--secondary);
     transition: all .3s;
 }
+
+/* enables the webpage to autoscroll smoothly when you press on an inpage link. */
+/* sicne the webpage is an html file. */
+html{
+    scroll-behavior: smooth;
+}
+
+/* custom states */
+.outOfBounds--Nav{
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
 
 /* going for a mobile first view */
 /* settings here are for  tablet and desktop/laptop screens */
@@ -333,6 +369,11 @@ section[name="projects"] {
     .section--Home{
         
          /* height: 80vh; */
+    }
+    .aboutMe{
+
+    /* padding-left: 5rem;
+    padding-right: 5rem; */
     }
 }
 
